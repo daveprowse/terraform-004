@@ -7,7 +7,7 @@ In this lab you will create a basic instance on AWS. You will need an AWS accoun
 - Copy and paste the code from code.txt into a new file named main.tf.
 - Adjust the formatting of the code with the `terraform fmt` command.
 - Initialize the working directory with the `terraform init` command.
-  > Note: You will see that a directory (.terraform) and a file (.terraform.lock.hcl) have been created automatically after issuing this command.
+  > Note: You will see that a directory (`.terraform`) and a file (`.terraform.lock.hcl`) have been created automatically after issuing this command.
 - Validate and verify the configuration with commands:
 
   `terraform validate`
