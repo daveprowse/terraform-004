@@ -29,4 +29,4 @@ This is for two reasons:
 Spend some time looking through the various help options. This is one of the best ways to learn Terraform. 
 
 ---
-**Another lab done! Great work!**
+**Another mini-lab done! Great work!**

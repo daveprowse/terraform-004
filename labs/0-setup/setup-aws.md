@@ -54,4 +54,4 @@ Note the [default] category. You can have multiple access keys stored here withi
 > **IMPORTANT!** When you are finished with this course, it is a best practice to delete any access keys that you created, and terminate any running instances in the AWS console (or other cloud provider). Finally, delete any keys or references to those keys on your local machine. 
 
 ---
-**Congratulations! You just finished another lab! YES!!**
+**Congratulations! You just finished another mini-lab! YES!!**
