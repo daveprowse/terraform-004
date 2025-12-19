@@ -35,3 +35,10 @@ https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#AMICatalog
 
 https://aws.amazon.com/aws-cost-management/aws-cost-explorer/ 
 
+---
+
+**Third-party** - AWS Pricing module:
+
+https://github.com/terraform-aws-modules/terraform-aws-pricing 
+
+

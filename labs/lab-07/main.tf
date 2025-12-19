@@ -1,0 +1,22 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.26"
+    }
+  }
+
+  required_version = ">= 1.14.2"
+}
+
+provider "aws" {
+  region = "us-east-2"
+}
+
+resource "aws_instance" "lab_07" {  
+  ami           = "ami-050352a65e954abb1"
+  instance_type = "t2.micro"
+  tags = {
+    Name      = "Lab-07-Variables!!!"
+  }
+}

@@ -7,13 +7,17 @@ Fish (friendly interactive shell) is an alternative to Bash. Consider using it t
 
 ## Install Fish as your shell
 
-https://fishshell.com/
+Go to https://fishshell.com/ for installation methods and binaries for all kinds of systems.
+
+You can install it easily on your Debian virtual machine with the following command:
+
+`sudo apt install fish`
 
 Configure Fish as the default shell:
 
 https://fishshell.com/docs/current/index.html#starting-and-exiting 
 
-> NOTE: the /local part of the directory path works for many Linux distros, but should be omitted in Debian. 
+> Note: the /local part of the directory path works for many Linux distros, but should be omitted in Debian. 
 
 Restart your computer or virtual machine. After the restart the Fish shell should work by default.
 
@@ -22,6 +26,18 @@ Modify the Fish prompt, color scheme, and more, by running the following program
 `fish_config`
 
 That will open a browser tab with all of the configuration options for Fish. 
+
+Also, if you like to use aliases you can build them in:
+
+`~/.config/fish/fish_config`
+
+For example, to use `ti` as an alias for `terraform init` (saving you keystrokes) you would add:
+
+`alias ti='terraform init'`
+
+*Add as many as you want!*
+
+> Note: The original Fish option is to use the `abbr` command. You still can, for example: `abbr --add 's' 'sudo'`. More information about that at: https://fishshell.com/docs/current/cmds/abbr.html.
 
 Restart the virtual machine when done. Verify that you can now use the Fish shell by default.
 
