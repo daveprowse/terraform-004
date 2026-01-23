@@ -1,0 +1,36 @@
+# Sample terraform.tfvars file for Lab-23
+# Students should create this file based on the lab instructions
+
+aws_region     = "us-east-2"
+environment    = "dev"
+instance_state = "running"
+instance_type  = "t2.micro"
+
+# Customize IAM users
+iam_users = ["app-deployer", "log-reader"]
+
+# Customize ingress rules (optional - defaults are fine)
+# Uncomment and modify as needed
+# ingress_rules = {
+#   dns = {
+#     from_port   = 53
+#     to_port     = 53
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"]
+#     description = "DNS access"
+#   }
+#   pop3 = {
+#     from_port   = 110
+#     to_port     = 110
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"]
+#     description = "POP3 access"
+#   }
+#   custom_app = {
+#     from_port   = 8080
+#     to_port     = 8080
+#     protocol    = "tcp"
+#     cidr_blocks = ["0.0.0.0/0"]
+#     description = "Custom application"
+#   }
+# }

@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  consul:
+    image: hashicorp/consul:1.19
+    container_name: consul-server
+    command: agent -server -ui -bootstrap-expect=1 -client=0.0.0.0
+    ports:
+      - "8500:8500"   # HTTP API and UI
+      - "8600:8600"   # DNS
+    environment:
+      - CONSUL_BIND_INTERFACE=eth0
+    volumes:
+      - consul-data:/consul/data
+
+volumes:
+  consul-data:

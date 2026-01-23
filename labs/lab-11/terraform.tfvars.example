@@ -1,0 +1,18 @@
+# Example Terraform Variables Configuration
+# Copy this to terraform.tfvars and customize as needed
+
+# AWS Region (must be us-east-2 for this demo)
+aws_region = "us-east-2"
+
+# EC2 Instance Type (t2.micro is free tier eligible)
+instance_type = "t2.micro"
+
+# Instance Name Tag
+instance_name = "terraform-test-instance"
+
+# Optional: Uncomment to use explicit AWS credentials
+# aws_access_key = "YOUR_ACCESS_KEY_HERE"
+# aws_secret_key = "YOUR_SECRET_KEY_HERE"
+
+# Note: It's more secure to use AWS CLI credentials or environment variables
+# instead of hardcoding credentials in this file

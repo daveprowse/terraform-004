@@ -1,0 +1,80 @@
+# Example of multiple AWS regions in one .tf file.
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.28.0"
+    }
+  }
+
+  required_version = "1.14.2"
+}
+
+## The first provider is shown in the normal manner.
+provider "aws" {
+  region = "us-east-2"
+}
+
+## The second provider uses an alias. "oregon" is the alias for "us-west-2"
+provider "aws" {
+  alias  = "oregon"
+  region = "us-west-2"
+}
+
+## Data source to find latest Debian 13 AMI in us-east-2
+data "aws_ami" "debian_ohio" {
+  most_recent = true
+  owners      = ["136693071363"] # Official Debian AWS account
+
+  filter {
+    name   = "name"
+    values = ["debian-13-amd64-*"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+}
+
+## Data source to find latest Debian 13 AMI in us-west-2
+data "aws_ami" "debian_oregon" {
+  provider    = aws.oregon
+  most_recent = true
+  owners      = ["136693071363"] # Official Debian AWS account
+
+  filter {
+    name   = "name"
+    values = ["debian-13-amd64-*"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+}
+
+## Create an instance the way you normally would in the us-east-2 region. 
+## This will be Debian Linux running in Ohio (us-east-2).
+
+resource "aws_instance" "test_instance" {
+  ami           = data.aws_ami.debian_ohio.id
+  instance_type = "t2.micro"
+  tags = {
+    Name = "OHIO TEST INSTANCE! DESTROY ME WHEN DONE!!"
+  }
+}
+
+## Later, resources can be created in the second region by  
+## using the alias: aws.oregon
+## This will be Debian Linux running in Oregon (us-west-2).
+
+resource "aws_instance" "oregon_instance" {
+  provider      = aws.oregon
+  ami           = data.aws_ami.debian_oregon.id
+  instance_type = "t2.micro"
+  tags = {
+    Name = "OREGON TEST INSTANCE! DESTROY ME WHEN DONE!!"
+  }
+}
