@@ -78,7 +78,7 @@ Run `terraform init` to initialize the directory. This applies to the entire wor
 ### Create the First Infrastructure
 
 Run `terraform apply`. This will create infrastructure and store its state file in the terraform.tfstate.d/test1 directory. Answer the questions with the following:
-  - Instance type = t2.micro
+  - Instance type = t3.micro
   - Name = test1-instance
   - Region = us-east-2
 
@@ -133,7 +133,7 @@ Destroy the infrastructure there too:
 
 `terraform destroy`
 
-Enter in the three values for the test1 infrastructure. (Remember that we used a t2.micro here...)
+Enter in the three values for the test1 infrastructure. (Remember that we used a t3.micro here...)
 
 Verify that both sets of infrastructure were destroyed. Review the AWS console and terraform.tfstate.d state files to confirm. 
 

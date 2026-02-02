@@ -267,7 +267,9 @@ vault kv delete secret/aws
 
 1. In HCP Portal, navigate to your Vault cluster
 2. Click **Manage** → **Delete cluster**
-3. Type **DELETE** to delete the cluster. This should now show as "Disbaled" and can take several minutes to be completely removed. Press `F5` to refresh and verify that it is deleting. YOU DON"T WANT TO BE CHARGED ANY MORE THAN NECESSARY! SO CHECK IT!
+3. Type **DELETE** to delete the cluster. This should now show as "Disabled" and can take several minutes to be completely removed. Press `F5` to refresh and verify that it is deleting. YOU DON"T WANT TO BE CHARGED ANY MORE THAN NECESSARY! SO CHECK IT!
+
+> IMPORTANT: You may also have a HashiCorp Virtual Network running. Check it within "Active resources". If one exists, click, it, then click Manage, and Delete it!!!
 
 ### (Optional) Delete Terraform Cloud Workspace
 

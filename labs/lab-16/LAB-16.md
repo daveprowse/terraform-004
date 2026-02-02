@@ -72,7 +72,10 @@ You will note that we are employing variables.
   - Terraform Cloud environment variables (recommended)
   - Hashicorp Vault (highly recommended)
 
-  I chose to use terraform.tfvars in this lab for two reasons: 1. We can run everything locally (and without having to incorporate new technologies); and 2. The terraform.tfvars file is meant for this purpose and can be added to your .gitignore file. However, keep in mind that it might not be the best option in team environments. In team scenarios, TC environment vars and/or Vault (or other secrets management tool) is recommended. 
+  I chose to use terraform.tfvars in this lab for two reasons: 
+  
+  1. We can run everything locally (and without having to incorporate new technologies); and 
+  2. The terraform.tfvars file is meant for this purpose and can be added to your .gitignore file. However, keep in mind that it might not be the best option in team environments. In team scenarios, TC environment vars and/or Vault (or other secrets management tool) is recommended. 
 
   For example, if you wanted to input your AWS credentials into environment variables in the Terraform Cloud, you would use the following naming conventions:
   ```bash

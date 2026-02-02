@@ -14,6 +14,8 @@ The `terraform graph` command generates a visual representation of your Terrafor
 
 ## Generating and Viewing the Graph
 
+> Note: Make sure you are working in the `instances` directory.
+
 ### Step 1: Generate the Graph
 
 From your Terraform configuration directory:

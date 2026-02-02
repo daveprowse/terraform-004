@@ -33,7 +33,11 @@ In this lab you will create a basic instance on AWS. You will need an AWS accoun
 - Destroy the infrastructure with the `terraform destroy` command.
 - Analyze the "state" file once more and identify the changes. Notice that a new file named `terraform.tfstate.backup` has been created. Analyze that as well.
 
-> **IMPORTANT!!!** Remember to use free tier versions of virtual machines (such as t2.micro) and to destroy them when you are finished testing so that you don't get charged anymore than necessary. Most of these labs should result in a minimal charge, or no charge if run properly. For more information on pricing and free tier versions, see [this link](../../z-more-info/aws-pricing-information.md).
+---
+
+‼️ **IMPORTANT** ‼️ Remember to use *Free Tier* versions of virtual machines, such as t2.micro or t3.micro (depending on the age of your account). And most importantly, to destroy them when you are finished testing so that you don't get charged anymore than necessary. Most of these labs should result in a minimal charge, or no charge if run properly. 
+
+The rules for AWS pricing get somewhat complicated. I highly suggest you learn more about pricing and Free Tier versions at [this document](../../z-more-info/aws-pricing-information.md).
 
 ---
 ## *Fantastic! You completed the lab!* 👍

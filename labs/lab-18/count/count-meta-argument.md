@@ -1,5 +1,7 @@
 # Use the count meta-argument!
 
+> Note: Meta-arguments are types of arguments that are built into the Terraform configuration language. They control how Terraform creates and manages your infrastructure. 
+
 In this lab you can practice using the count meta-argument which can allow you to setup multiple resources without having to re-type the code.
 
 In this directory you will find :

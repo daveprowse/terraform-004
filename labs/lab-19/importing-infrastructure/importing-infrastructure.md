@@ -4,7 +4,7 @@ It is possible to import existing infrastructure into your current configuration
 
 1. Create an AWS instance. 
   
-    Do this in the AWS console. Use the free tier (t2.micro) for this instance. 
+    Do this in the AWS console. Use the free tier (t3.micro) for this instance. 
     > Note: I suggest using Debian, Ubuntu, or Amazon Linux, but whatever you choose, make sure it is free tier compatible!
 
     Name the instance "instance1". 
@@ -16,7 +16,7 @@ It is possible to import existing infrastructure into your current configuration
     Make note of the name and the ID for the instance. For example, you should have a configuration similar to this:
     - Name: instance1
     - Instance ID: i-0ef987298374...
-    - Type: t2.micro
+    - Type: t3.micro
 
     > Note: Your Instance ID will be different. 
 
@@ -33,7 +33,7 @@ It is possible to import existing infrastructure into your current configuration
       instance_type = "unknown"
        
       tags = {
-        "Name" = "unknown"
+        Name = "unknown"
       }
     }
     ```
@@ -50,7 +50,7 @@ It is possible to import existing infrastructure into your current configuration
 
     `terraform import aws_instance.instance1 <Instance ID>`
 
-    Replace the Instance ID portion with whatever instance ID AWS gave you. (The Instance ID is listed in the state file. It is also shown directly after the Name in the AWS console.) 
+    Replace the Instance ID portion with whatever instance ID AWS gave you. (The Instance ID is listed directly after the Name in the AWS console.) 
     
     When you run the command, the instance should be imported into your state file. It is now a Terraform-managed resource! Awesome Sauce!
 
@@ -72,7 +72,7 @@ It is possible to import existing infrastructure into your current configuration
     Do the following in main.tf within the resource block: 
     
     - In the ami field, copy and paste the AMI. You can find the AMI in the state file (about 15 to 20 lines down) or in the AWS console in the details tab of your instance.
-    - For instance_type, put "t2.micro".
+    - For instance_type, put "t3.micro".
     - For the Name, put "instance1".
 
     Save the file.

@@ -19,7 +19,8 @@ Spend a minute viewing the options for variables within your Workspace.
 ## Create Variables on the Cloud
 
 - Return to the Terraform Cloud.
-- Select "Terraform Variable"
+- Within your workspace, click "Variables".
+- Click "+ Add variable".
 - Enter the key (region) and the value (us-east-2).
 - Click "Add variable".
 

@@ -2,10 +2,10 @@
 
 terraform {
   cloud {
-    organization = "prowse_tech"
+    organization = "your-company"
     
     workspaces {
-      name = "hcp-vault-demo"
+      name = ""
     }
   }
   

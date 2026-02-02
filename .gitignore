@@ -1,6 +1,6 @@
 .vscode/
 .git-push.sh
-terraform.tfvars
+
 lab-X
 z-backup/
 

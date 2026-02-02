@@ -42,7 +42,8 @@ In this lab we will trigger Terraform runs via version control using GitHub.
 
   The purpose of this is to make sure that git ignores the directory when committing to the repo. 
   The provider plugin is stored in the .terraform directory and is too big for standard github accounts.
-- Save the file.
+- Also, add the `.terraform.tfvars` file to the `.gitignore`.
+- Save the `.gitignore` file.
 
 ### Configure the local git repository and push it to GitHub
 

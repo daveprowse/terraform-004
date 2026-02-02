@@ -2,7 +2,7 @@
 
 variable "instance_type" {
   description = "AWS EC2 Instance Type"
-  default = "t2.micro"
+  default = "t3.micro"
 }
 
 variable "ssh_key" {

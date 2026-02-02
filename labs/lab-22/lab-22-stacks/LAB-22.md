@@ -63,8 +63,6 @@ lab-22-stacks/
 - `stack.tfcomponent.hcl` - Defines the IAM user component using a registry module
 - `deployments.tfdeploy.hcl` - Defines dev and prod deployments with `store` block referencing AWS credentials variable set
 
-**Key difference from earlier approach:** This lab uses the official AWS IAM module from the Terraform Registry (`terraform-aws-modules/iam/aws`) instead of a local module, which allows for reliable CLI-based stack operations.
-
 **Update Terraform Version:**
 
 Before initializing, update `.terraform-version` to match your local Terraform CLI:

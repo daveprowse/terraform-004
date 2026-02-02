@@ -176,6 +176,8 @@ For an example build of a Linux virtual machine at the Terraform Registry, see:
 https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine
 
 > Note: Code for providers is always progressing and can change over time. Be ready to access the above links to learn more about any future changes.
+>
+> Fun Note: For the video I used the Azure Peacock color (which is #007fff") in case you were wondering!
 
 ---
 ## *Great Work! Now you know two providers!"*

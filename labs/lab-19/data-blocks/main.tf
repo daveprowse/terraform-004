@@ -36,5 +36,6 @@ resource "aws_instance" "data_block_instance" {
 #   --filters "Name=name,Values=ubuntu/images/*" \
 #   --query 'sort_by(Images, &CreationDate)[-1].[ImageId,Name,CreationDate]' --output table
 
+## Ownership IDs will be different for the AWS GovCloud and for China.
 ## More information on data sources: https://developer.hashicorp.com/terraform/language/data-sources 
 ## More information on data source: aws_ami: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami

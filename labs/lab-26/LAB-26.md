@@ -54,6 +54,8 @@ With the plethora of tools out there, the only way for you to find out what work
 - Great performance-to-cost ratio.
 
 > Note: As of 2026, those are the big four. But this is not a finite list. There are plenty of other tools out there.
+>
+> Check out this pricing tool: https://yourgpt.ai/tools/openai-and-other-llm-api-pricing-calculator
 
 ### Popular Tools/Methods of Interaction
 
@@ -170,6 +172,19 @@ The main point of a preamble is to save time and be more efficient. After a lot 
 
 ---
 
+## Open Source AI Tools
+
+Many of the following open source tools can be run on your own computer. Then you download and run the model that you want to use within the tool. The more GPU power you have, the better the model you can run!
+
+- GPT4ALL 
+- Jan
+- OpenCode
+- LLM360
+- OpenCV
+- StableDiffusion (and Fooocus)
+- Midjourney
+
+---
 ## Fun Anecdote 
 
 For years, my question to stump an AI tool was this:
@@ -289,6 +304,22 @@ Sounds silly, but this was one of my litmus tests for AI bots. Once Claude hit t
 | Windsurf | AI code editor | Free/Paid | Desktop |
 | Claude Code | Terminal coding agent | Paid (requires Claude) | CLI |
 | Warp | AI-powered terminal | Free/Paid | Desktop |
+
+---
+
+## AI Aggregators
+
+That's a lot of tools and models! Consider an AI aggregator to make comparisons between them:
+
+- OpenRouter
+- Poe
+- TypingMind
+- Perplexity AI
+- Hugging Chat (for open source models)
+- Aymo AI
+- ChatHub
+- Monica
+- Phind
 
 ---
 

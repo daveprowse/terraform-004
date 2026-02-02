@@ -530,10 +530,13 @@ ingress_rules = {
 }
 ```
 
+---
+
 ### 3. Initialize Terraform
 
+Make sure you are working in the lab-23 directory.
+
 ```bash
-cd lab-23-advanced-aws
 terraform init
 ```
 
