@@ -25,6 +25,8 @@ In this lab you will create a basic instance on AWS. You will need an AWS accoun
   > **Note:** During this course I recommend using the regions that are shown in the code. However, if you need to change the AWS region to better suit your geographic location, you will also have to change the AMI used to one that exists in that region. 
   > A list of regions can be found here: 
   > https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html 
+  >
+  > ‼️ **IMPORTANT** ‼️ If you created your account after July 15th, 2025, then you should use t3.micro for Free Tier hours instead of t2.micro. If that is the case, use t3.micro going forward. For more information, see [this link](../../z-more-info/aws-pricing-information.md).
 
   ---
 
