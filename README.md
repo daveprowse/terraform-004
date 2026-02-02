@@ -27,8 +27,8 @@ You should see two 80-question practice exams. However, you must be a member of 
 > **LINUX:** To run the labs in this course I use a Debian Linux Virtual Machine with Visual Studio Code installed. I recommend a minimum of 2 CPUs and 4 GB of RAM as well as at least 30 GB storage space. 
 
 > **AWS FREE TIER:** I use `t2.micro` AWS instances during the first 18 labs. Depending on when you created your AWS account, these might not be available in AWS Free Tier. 
-> - If you created your AWS account before July 15th, 2025, then you can use t2.micro as well as t3.micro for Free Tier (depending on your region). t3.micro is the newer type and you should consider using it during the labs instead of t2.micro.
-> - If you created your AWS account after July 15th, 2025, then you should use t3.micro, as the t2.micro instance will not be part of Free Tier. Simply change the instance type during the labs. 
+> - If you created your AWS account *before* July 15th, 2025, then you can use t2.micro as well as t3.micro for Free Tier (depending on your region). t3.micro is the newer type and you should consider using it during the labs instead of t2.micro.
+> - If you created your AWS account *after* July 15th, 2025, then you should use t3.micro, as the t2.micro instance will not be part of Free Tier. Simply change the instance type during the labs. 
 > - Either way, when you run our of Free Tier hours, both the t2.micro and t3.micro instance types cost in the neighborhood of $.01/per hour (1 cent per hour). 
 > - Bottom line - when creating instances on AWS, check in the AWS console to see if the instance type (and OS type) is available within the Free Tier program. 
 > - For more information, see the following links:
