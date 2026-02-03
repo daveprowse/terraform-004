@@ -1,4 +1,5 @@
 .vscode/
 .git-push.sh
 z-backup/
+.VSCodeCounter/*
 
