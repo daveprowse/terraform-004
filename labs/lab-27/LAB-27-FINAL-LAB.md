@@ -2,6 +2,8 @@
 
 *Rev. B - January 23, 2026*
 
+[Dave Prowse](https://prowse.tech)
+
 **UPDATED FOR:**
 - Terraform 1.14.2+
 - AWS Provider 6.26+
