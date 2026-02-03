@@ -100,6 +100,13 @@ Be sure to ***destroy*** when you are done so you are not charged any more than 
 ## Analyze the Terraform Files
 
 - Examine `main.tf`. Understand how the EC2 instances work in conjunction with the Elastic IPs, SSH keys, and so on. Also note how we are generating a ED25519 .pem key locally (resource "tls_private_key") and how that is being sent to AWS with the "aws_key_pair" deployer.
+  > Note: Essentially it works like this: `tls_private_key` is a resource from the HashiCorp tls provider. Its actual job is simply generating a cryptographic key pair. It supports RSA, ECDSA, and ED25519 algorithms. That's it — it's a key generator. In main.tf it's being used purely for SSH. The chain is:
+  > - `tls_private_key.ssh_key` generates an ED25519 key pair in memory during terraform apply
+  > - `local_file.private_key` writes the private half to lab-x-key.pem on your local filesystem (mode 0600)
+  > - `aws_key_pair.lab_key` uploads the public half to AWS
+  >
+  > Yeah! Terraform did all that!
+
 - Examine `variables.tf` and understand the relationships between the instances and other resources and the variables blocks.
 - Examine your `terraform.tfvars` file and understand the relationships between the variables blocks in `variables.tf` and the values here.
 - Examine `outputs.tf` and understand how the SSH values work with the instances and their paths.
