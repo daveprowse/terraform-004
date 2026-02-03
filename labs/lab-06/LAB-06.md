@@ -9,6 +9,8 @@ Let's build on the last lesson by adding a cloud-config to our Terraform configu
 
 - Add the SSH public key to the main.tf file as we did in the previous lesson. Save the file. 
 
+  > Note: You could also have Terraform auto-generate SSH keys for you with the `tls_private_key` resource. See [Lab-X](../lab-X/LAB-X.md) for an example!
+
 - Copy the code-script.txt file into your scripts directory. Name it apache-mkdocs.yaml.
   - For example: `cp code-script.txt scripts/apache-mkdocs.yaml`
   - Analyze the new file. This will create a new administrative user, and install the open source mkdocs program.
