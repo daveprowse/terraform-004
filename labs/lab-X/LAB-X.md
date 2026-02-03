@@ -1,6 +1,8 @@
 # Lab-X: AWS EC2 with ZORK Game and Documentation
 
-*Rev. A - February 3, 2026*
+- Software: Version 3.5
+
+* Documentation: Rev. A - February 3, 2026*
 
 [Dave Prowse](https://prowse.tech)
 
@@ -101,6 +103,8 @@ Be sure to ***destroy*** when you are done so you are not charged any more than 
 - Examine `variables.tf` and understand the relationships between the instances and other resources and the variables blocks.
 - Examine your `terraform.tfvars` file and understand the relationships between the variables blocks in `variables.tf` and the values here.
 - Examine `outputs.tf` and understand how the SSH values work with the instances and their paths.
+
+> Note: Analyze other files as well such as the Bash scripts and the .gitignore file. 
 
 ---
 
