@@ -236,7 +236,7 @@ Be sure that all infrastructure is terminated in the AWS console! This includes:
 If you have come this far, you get the trophy! 🏆
 Continue on to the last lesson.
 
-> Note: Sad, it's the last lab. Or [was it](//labs/lab-X/super-lab/LAB-X.md)?
+> Note: Sad, it's the last lab. Or [was it](../lab-X/LAB-X.md)?
 
 ---
 
