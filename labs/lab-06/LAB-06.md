@@ -55,6 +55,8 @@ At this point, the system should install an Apache web server, install pip, inst
 
 **- When complete, be sure to DESTROY the infrastructure.**
 
+‼️ IMPORTANT ‼️ In the video I did an interesting destroy based on a plan. Be careful with this and make sure that you have indeed destroyed your resources. Double-check in the AWS console!
+
 ---
 ## 🎊 *That was a lot of tech! Great job!* 🎊
 ---
