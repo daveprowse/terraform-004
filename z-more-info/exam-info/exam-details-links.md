@@ -37,9 +37,12 @@ This document gives some basic details about the actual HashiCorp Terraform Asso
 
     > Important! Be sure to check your computer here and make sure that it meets the requirements!
 
-    Additional systems check:
-    https://systemcheck.rpexams.com/
-
+- **PSI tester!** 
+  
+    https://systemcheck.rpexams.com/   
+    
+    (this should auto-run when you go to the page)
+    
 - **CertMetrics Page**
     This is your dashboard area for scheduling/taking exams.
     https://cp.certmetrics.com/hashicorp/en/home/dashboard
