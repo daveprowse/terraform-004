@@ -81,3 +81,15 @@ Confirm credentials file restored:
 ```bash
 cat ~/.aws/credentials
 ```
+
+---
+
+> Note: During the corresponding video I mention that you can create a new terminal in VS Code by pressing control plus shift plus tilde:
+> ```
+> Ctrl+Shift+~
+> ```
+> This is not quite accurate, it's really the backtick (`` ` ``) that is pressed. 
+> ```
+> Ctrl+Shift+`
+> ```
+> But on many keyboards (including US keyboards), the tilde and backtick are the same key, so it might not make a difference depending on your region.
