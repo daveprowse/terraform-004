@@ -34,14 +34,14 @@ This document gives some basic details about the actual HashiCorp Terraform Asso
 - **System Requirements:**
 
     https://helpdesk.psionline.com/hc/en-gb/articles/4409608794260-PSI-Bridge-Platform-RPNow-System-Requirements
-
-    > Important! Be sure to check your computer here and make sure that it meets the requirements!
-
+    
 - **PSI tester!** 
   
     https://systemcheck.rpexams.com/   
+
+    **Important!** Be sure to check your computer here and make sure that it meets the requirements!
     
-    (this should auto-run when you go to the page)
+    > Note: This should auto-run when you go to the page.
     
 - **CertMetrics Page**
     This is your dashboard area for scheduling/taking exams.
