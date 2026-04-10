@@ -82,8 +82,13 @@ resource "azurerm_network_interface_security_group_association" "example" {
 resource "azurerm_linux_virtual_machine" "azure_vm_1" {
   name                = "Azure-VM-1"
   resource_group_name = azurerm_resource_group.rg_1.name
-  location            = azurerm_resource_group.rg_1.location
+  location            = azurerm_resource_group.rg_1.location  
   size                = "Standard_B1s"
+  
+  # Note: If "Standard_B1s" doen't work for you, try one of the newer options:
+  # Standard_B2ts_v2  (Intel) or 
+  # Standard B2ats_v2  (AMD)
+  
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.nic_1.id,
