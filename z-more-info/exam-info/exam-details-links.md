@@ -46,3 +46,6 @@ This document gives some basic details about the actual HashiCorp Terraform Asso
 - **CertMetrics Page**
     This is your dashboard area for scheduling/taking exams.
     https://cp.certmetrics.com/hashicorp/en/home/dashboard
+
+- **Objectives Page**
+    https://developer.hashicorp.com/terraform/tutorials/certification-004/associate-review-004
