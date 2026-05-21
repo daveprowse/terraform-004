@@ -6,6 +6,8 @@ In this lab you will install the Terraform CLI on to your system. Follow the ste
 
 Let's do this!
 
+> Note: the HashiCorp Certified Terraform Associate (004) Complete Video Course is available at **[O'Reilly](https://learning.oreilly.com/course/hashicorp-certified-terraform/9780135909560/)**.
+
 ## First - Update your system!
 Whatever system you are running, it is a best practice to make sure it is updated before installing Terraform. This will provide you with security updates and the latest functionality.
 
