@@ -6,9 +6,9 @@
 
 ---
 
-Within this repository you will find companion labs for the HashiCorp Certified Terraform Associate (004) Complete Video Course which is available at:
+Within this repository you will find companion labs for the HashiCorp Certified Terraform Associate (004) Complete Video Course which is available at the following links:
 
-***Links coming soon...***
+**[O'Reilly](https://learning.oreilly.com/course/hashicorp-certified-terraform/9780135909560/)** and **[Pearson](https://www.pearsonitcertification.com/store/hashicorp-certified-terraform-associate-004-video-course-9780135909591)**
 
 The labs are designed to be followed when watching the corresponding videos.
 
