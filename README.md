@@ -38,6 +38,8 @@ You should see two 80-question practice exams. However, you must be a member of 
 > - [AWS Free Tier FAQs (Official Q&A)](https://aws.amazon.com/free/free-tier-faqs/)
 > - [Tracking Free Tier Usage (Monitoring)](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html)
 
+> **DESTROY!!**  Be sure to destroy your infrastructure when you are done with your labs! Use the command `terraform destroy` to do so and double check every time to make sure that everything is destroyed so that you do not incur any more charges! Check your AWS dashboard (main login page) to see if there is anything running and destroy it if it is not necessary. The only things you want to keep are the default VPC and default subnet.
+
 > **GIT:** Consider removing the hidden .git directory if you don't want to have Git tracking enabled for the repository.
 > 
 > I don't recommend forking this repository as there are changes made often. Instead, show your love by starring the repository!
